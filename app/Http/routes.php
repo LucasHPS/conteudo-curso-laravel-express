@@ -12,3 +12,11 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('blog', 'PostsController@index');
+
+Route::get('admin/posts', ['as'=>'admin.posts.index', 'uses'=>'PostsAdminController@index']);
+Route::get('admin/posts/create', ['as'=>'admin.posts.create', 'uses'=>'PostsAdminController@create']);
+Route::get('admin/posts/edit/{id}', ['as'=>'admin.posts.edit', 'uses'=>'PostsAdminController@edit']);
+Route::get('admin/posts/delete/{id}', ['as'=>'admin.posts.delete', 'uses'=>'PostsAdminController@destroy']);
+Route::post('admin/posts/store', ['as'=>'admin.posts.store', 'uses'=>'PostsAdminController@store']);
+Route::put('admin/posts/update/{id}', ['as'=>'admin.posts.update', 'uses'=>'PostsAdminController@update']);

@@ -35,7 +35,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Posts</a></li>
+                <li><a href="/blog">Posts</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
         </div>
